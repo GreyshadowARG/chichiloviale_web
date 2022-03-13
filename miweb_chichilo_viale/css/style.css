@@ -331,7 +331,7 @@
 
     /* Footer */
     footer{
-        background-color: rgb(175, 175, 175);
+        background-image: linear-gradient(rgb(180, 180, 180),rgb(83, 83, 83));
         box-shadow: 0px -5px 10px 5px rgba(0, 0, 0, 0.274);
         height: 65px;
         width: 100%;
@@ -706,7 +706,7 @@
 
     /* Footer */
     footer{
-        background-color: rgb(175, 175, 175);
+        background-image: linear-gradient(rgb(180, 180, 180),rgb(83, 83, 83));
         box-shadow: 0px -5px 10px 5px rgba(0, 0, 0, 0.274);
         height: 65px;
         width: 100%;
@@ -803,6 +803,7 @@
     }
     header ul li a:hover {
         transition: all 1s ease;
+        transform: translate(0, -1px);
     }
     .link__home{
         font-weight: 700;
@@ -1047,7 +1048,7 @@
     
     /* Footer */
     footer{
-        background-color: rgb(175, 175, 175);
+        background-image: linear-gradient(rgb(180, 180, 180),rgb(83, 83, 83));
         box-shadow: 0px -5px 10px 5px rgba(0, 0, 0, 0.274);
         height: 65px;
         width: 100%;
