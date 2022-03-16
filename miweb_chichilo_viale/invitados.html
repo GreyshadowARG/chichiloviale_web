@@ -4,78 +4,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Chichilo Viale en el 12 | Contacto</title>
+    <title>Chichilo Viale en el 12 | Invitados</title>
 
 </head>
 <body>
-    <header>
-        <nav>       
-            <div id="navBar__menu">
-                <ul>
-                    <li><a href="index.html" class="link__home">CHICHILO EN EL 12</a></li>
-                    <li><a href="ver_programas.html">VER PROGRAMAS</a></li>
-                    <li><a href="invitados.html">INVITADOS</a></li>
-                    <li><a href="archivo.html">ARCHIVO</a></li>
-                    <li><a href="redes.html">REDES</a></li>
-                </ul>
-                <img src="imgs/img_header.jpg" alt="imagen-header" id="header__img">
-            </div>   
-        </nav>
-    </header>
+  <nav class="navbar navbar-expand-md navbar-modificada">
+    <div class="container-fluid">     
+      <img src="./imgs/img_header.jpg" alt="img_header" id="img_header"> 
+      <a href="index.html" class="navbar-brand navbar-modificada">CHICHILO EN EL 12</a>
+      <button type="button" class="navbar-toggler navbar-light" data-bs-toggle="collapse" data-bs-target="#MenuDesplegable" controls="MenuDesplegable">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="MenuDesplegable" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="ver_programas.html">VER PROGRAMAS</a></li>
+          <li class="nav-item"><a class="nav-link" href="invitados.html">INVITADOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="archivo.html">ARCHIVO</a></li>
+          <li class="nav-item"><a class="nav-link" href="redes.html">REDES</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <main>
-        <div class="invitados__container">
-            <div class="invitados__container-grid">
-                <div class="invitados_object">
-                    <img src="imgs/invitados_1.jpg" alt="invitados_1" class="invitados_foto">
-                    <h2 class="invitados_foto-text">José Palazzo</h3>
-                </div>
-                <div class="invitados_object">
-                    <img src="imgs/invitados_2.jpg" alt="invitados_2" class="invitados_foto">
-                    <h2 class="invitados_foto-text">Oscar Alberto Dertycia</h3>
-                </div>
-                <div class="invitados_object">
-                    <img src="imgs/invitados_3.jpg" alt="invitados_3" class="invitados_foto">
-                    <h2 class="invitados_foto-text">Héctor Baldassi</h3>
-                </div>
-                <div class="invitados_object">
-                    <img src="imgs/invitados_4.jpg" alt="invitados_4" class="invitados_foto">
-                    <h2 class="invitados_foto-text">Jorge Coll</h3>
-                </div>
-                <div class="invitados_object">
-                    <img src="imgs/invitados_5.jpg" alt="invitados_5" class="invitados_foto">
-                    <h2 class="invitados_foto-text">Silvia Pérez Ruiz</h3>
-                </div>
-                <div class="invitados_object">
-                    <img src="imgs/invitados_6.jpg" alt="invitados_6" class="invitados_foto">
-                    <h2 class="invitados_foto-text">Los Modernos</h3>
-                </div>
-                <div class="invitados_object">
-                    <img src="imgs/invitados_7.jpg" alt="invitados_7" class="invitados_foto"> 
-                    <h2 class="invitados_foto-text">Georgina Bardach</h3>
-                </div>
-                <div class="invitados_object">
-                    <img src="imgs/invitados_8.jpg" alt="invitados_8" class="invitados_foto">
-                    <h2 class="invitados_foto-text">Los Modernos</h3>
-                </div>
+  <main>
+    <!-- main para screen -->
+    <div class="invitados_container">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/invitados_1.jpg" class="d-block w-100" alt="invitados_1">
+            <div class="carousel-caption d-none d-md-block">
+              <p>José Palazzo</p>
             </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/invitados_2.jpg" class="d-block w-100" alt="invitados_2">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Oscar Alberto Dertycia</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/invitados_3.jpg" class="d-block w-100" alt="invitados_3">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Héctor Baldassi y Silvia Pérez Ruiz</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/invitados_4.jpg" class="d-block w-100" alt="invitados_4">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Jorge Coll</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/invitados_5.jpg" class="d-block w-100" alt="invitados_5">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Silvia Pérez Ruiz</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/invitados_6.jpg" class="d-block w-100" alt="invitados_6">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Georgina Bardach</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/invitados_7.jpg" class="d-block w-100" alt="invitados_7">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Los Modernos</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/invitados_8.jpg" class="d-block w-100" alt="invitados_8">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Martín Monguzzi</p>
+            </div>
+          </div>
         </div>
-    </main>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- main para mobile -->
+    <div class="invitados_container_mobile">
+      <div class="invitados_mobile_box">
+        <img src="imgs/invitados_1_small.jpg" alt="invitados_1_small">
+        <p>José Palazzo.</p>
+      </div>
+      <div class="invitados_mobile_box">
+        <img src="imgs/invitados_2_small.jpg" alt="invitados_2_small">
+        <p>Oscar Alberto Dertycia.</p>
+      </div>
+      <div class="invitados_mobile_box">
+        <img src="imgs/invitados_3_small.jpg" alt="invitados_3_small">
+        <p>Héctor Baldassi y Silvia Pérez Ruiz.</p>
+      </div>
+      <div class="invitados_mobile_box">
+        <img src="imgs/invitados_4_small.jpg" alt="invitados_4_small">
+        <p>Jorge Coll.</p>
+      </div>
+      <div class="invitados_mobile_box">
+        <img src="imgs/invitados_5_small.jpg" alt="invitados_5_small">
+        <p>Silvia Pérez Ruiz.</p>
+      </div>
+      <div class="invitados_mobile_box">
+        <img src="imgs/invitados_6_small.jpg" alt="invitados_6_small">
+        <p>Georgina Bardach.</p>
+      </div>
+      <div class="invitados_mobile_box">
+        <img src="imgs/invitados_7_small.jpg" alt="invitados_7_small">
+        <p>Los Modernos.</p>
+      </div>
+      <div class="invitados_mobile_box">
+        <img src="imgs/invitados_8_small.jpg" alt="invitados_8_small">
+        <p>Martín Monguzzi.</p>
+      </div>
+    </div>
+  </main>
     
-    <footer>
-        <div class="footer__container">
-            <ul>
-                <li><a href="https://www.youtube.com/channel/UC5xZYxSiBNIRsbrhYUXpfsA" target="_blank"><img src="imgs/logo_youtube.png" alt="logo_youtube"></a></li>
-                <li><a href="https://www.facebook.com/VialeChichilo" target="_blank"><img src="imgs/logo_facebook.png" alt="logo_facebook"></a></li>
-                <li><a href="https://www.instagram.com/chichiloviale/" target="_blank"><img src="imgs/logo_instagram.png" alt="logo_twitter"></a></li>
-            </ul>
-            <h5>Febrero 2022 &#169</h5>
-        </div>
-    </footer>
+  <footer>
+    <div class="footer__container">
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UC5xZYxSiBNIRsbrhYUXpfsA" target="_blank"><img src="imgs/logo_youtube.png" alt="logo_youtube"></a></li>
+            <li><a href="https://www.facebook.com/VialeChichilo" target="_blank"><img src="imgs/logo_facebook.png" alt="logo_facebook"></a></li>
+            <li><a href="https://www.instagram.com/chichiloviale/" target="_blank"><img src="imgs/logo_instagram.png" alt="logo_twitter"></a></li>
+            <li><h6>© CHICHILO VIALE 2022</h6></li>
+        </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

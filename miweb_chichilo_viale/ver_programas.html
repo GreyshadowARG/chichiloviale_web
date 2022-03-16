@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,54 +14,57 @@
 
 </head>
 <body>
-    <header>
-        <nav>       
-            <div id="navBar__menu">
-                <ul>
-                    <li><a href="index.html" class="link__home">CHICHILO EN EL 12</a></li>
-                    <li><a href="ver_programas.html">VER PROGRAMAS</a></li>
-                    <li><a href="invitados.html">INVITADOS</a></li>
-                    <li><a href="archivo.html">ARCHIVO</a></li>
-                    <li><a href="redes.html">REDES</a></li>
-                </ul>
-                <img src="imgs/img_header.jpg" alt="imagen-header" id="header__img">
-            </div>   
-        </nav>
-    </header>
+  <nav class="navbar navbar-expand-md navbar-modificada">
+    <div class="container-fluid">     
+      <img src="./imgs/img_header.jpg" alt="img_header" id="img_header"> 
+      <a href="index.html" class="navbar-brand navbar-modificada">CHICHILO EN EL 12</a>
+      <button type="button" class="navbar-toggler navbar-light" data-bs-toggle="collapse" data-bs-target="#MenuDesplegable" controls="MenuDesplegable">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="MenuDesplegable" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="ver_programas.html">VER PROGRAMAS</a></li>
+          <li class="nav-item"><a class="nav-link" href="invitados.html">INVITADOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="archivo.html">ARCHIVO</a></li>
+          <li class="nav-item"><a class="nav-link" href="redes.html">REDES</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <main>
-        <div class="ver_programas__container">
-            <div class="ver_programas_main">
-                <iframe class="ver_programas_main-vid" frameBorder=0 src="https://www.youtube.com/embed/2e3xcloZcc8"></iframe>
-                <h3>Programa Nº 42 23/01/22</h3>
-                <h4>Invitados: Florencia Marcasoli, Chiqui Abecasis y Esteban Prol.</h4>
-            </div>
-            <div class="ver_programas__panel-abajo-grid">
-                <div class="ver_programas__panel-vid1">
-                    <iframe class="ver_programas-vid1" frameBorder=0 src="https://www.youtube.com/embed/stE84u-sCNs"></iframe>
-                    <h5>Programa Nº 41 02/01/22</h5>
-                </div>
-                <div class="ver_programas__panel-vid2">
-                    <iframe class="ver_programas-vid2" frameBorder=0 src="https://www.youtube.com/embed/5HwIokQuzzs"></iframe>
-                    <h5>Programa Nº 39 26/12/21</h5>
-                </div>
-                <div class="ver_programas__panel-vid3">
-                    <iframe class="ver_programas-vid3" frameBorder=0 src="https://www.youtube.com/embed/goEu_aUnbhM"></iframe>
-                    <h5>Programa n° 34 - 21/11/21</h5>
-                </div>
-            </div>          
-        </div>
-    </main>
+  <main>
+    <div class="recomendacion_tablet">
+      <p>Si estas en un dispositivo movil o tablet, te recomendamos inclinarlo.</p>
+    </div>
     
-    <footer>
-        <div class="footer__container">
-            <ul>
-                <li><a href="https://www.youtube.com/channel/UC5xZYxSiBNIRsbrhYUXpfsA" target="_blank"><img src="imgs/logo_youtube.png" alt="logo_youtube"></a></li>
-                <li><a href="https://www.facebook.com/VialeChichilo" target="_blank"><img src="imgs/logo_facebook.png" alt="logo_facebook"></a></li>
-                <li><a href="https://www.instagram.com/chichiloviale/" target="_blank"><img src="imgs/logo_instagram.png" alt="logo_twitter"></a></li>
-            </ul>
-            <h5>Febrero 2022 &#169</h5>
+    <div class="ver_programas__container">
+      <div class="ratio ratio-16x9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2e3xcloZcc8" allowfullscreen></iframe>
+      </div>
+      <div class="ver_programas__panel">
+        <div class="ver_programas__texto">
+          <h3>Programa Nº 42 23/01/22</h3>
+          <h4>Invitados: Florencia Marcasoli, Chiqui Abecasis y Esteban Prol.</h4>
         </div>
-    </footer>
+        <a href="https://www.youtube.com/channel/UC5xZYxSiBNIRsbrhYUXpfsA" target="_blank">
+          <img src="imgs/vamos_canal.jpg" class="img-fluid" alt="vamos_canal">
+        </a>
+      </div>
+    </div>
+  </main>
+    
+  <footer>
+    <div class="footer__container">
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UC5xZYxSiBNIRsbrhYUXpfsA" target="_blank"><img src="imgs/logo_youtube.png" alt="logo_youtube"></a></li>
+            <li><a href="https://www.facebook.com/VialeChichilo" target="_blank"><img src="imgs/logo_facebook.png" alt="logo_facebook"></a></li>
+            <li><a href="https://www.instagram.com/chichiloviale/" target="_blank"><img src="imgs/logo_instagram.png" alt="logo_twitter"></a></li>
+            <li><h6>© CHICHILO VIALE 2022</h6></li>
+        </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
