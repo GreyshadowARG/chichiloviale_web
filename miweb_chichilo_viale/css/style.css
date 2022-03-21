@@ -16,16 +16,22 @@ body{
 
 /* NAVBAR */
 .navbar{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.08rem;
     background-color: rgb(230, 204, 83);
 }
 .navbar-brand{
-    font-weight: bold;
+    font-weight: 500;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     color: black;
     text-align: center;
 }
+.nav-item{
+    font-weight: 400;
+}
 .navbar-nav{
+    height: fit-content;
     background-color: rgb(230, 204, 83);
     text-align: right;
 }
@@ -141,7 +147,7 @@ body{
     flex-flow: column;
     justify-content: center;
     margin: 0 auto;
-    width:90%;
+    width:80%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
