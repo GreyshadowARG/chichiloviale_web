@@ -1,0 +1,46 @@
+.navbar{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.08rem;
+    background-color: rgb(230, 204, 83);
+    img{
+        width: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.navbar-brand{
+    font-weight: 500;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: black;
+    text-align: center;
+}
+.nav-item{
+    font-weight: 400;
+}
+.navbar-nav{
+    height: fit-content;
+    background-color: rgb(230, 204, 83);
+    text-align: right;
+}
+.navbar-modificada{
+    a.nav-link, a.navbar-brand{
+        font-weight: bold;
+        color: rgb(29, 29, 29);
+        &:hover{
+            color: rgb(109, 21, 10);
+            background-image: linear-gradient(rgb(230, 204, 83),rgb(233, 214, 131));
+            transition: 0.3s ease-in;
+        }
+        a.nav-link:hover{
+            color: rgb(109, 21, 10);
+            background-image: linear-gradient(rgb(230, 204, 83),rgb(233, 214, 131));
+            transition: 0.3s ease-in;
+        }
+        a.navbar-brand:hover{
+            color: rgb(109, 21, 10);
+            background-image: linear-gradient(rgb(230, 204, 83),rgb(233, 214, 131));
+            transition: 0.3s ease-in;
+        }
+    }
+}
