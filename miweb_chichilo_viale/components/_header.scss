@@ -1,11 +1,9 @@
 .navbar{
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0.08rem;
-    background-color: rgb(230, 204, 83);
+    background-color: map-get($header, bg-header);
     img{
-        width: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
+        @include navbar_img(50px, 10px, 10px);
     }
 }
 .navbar-brand{
@@ -20,7 +18,7 @@
 }
 .navbar-nav{
     height: fit-content;
-    background-color: rgb(230, 204, 83);
+    background-color: map-get($header, bg-header);
     text-align: right;
 }
 .navbar-modificada{

@@ -1,9 +1,7 @@
 .ver_programas__container{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+    @extend %flex-column-center;
     margin: 0 auto;
-    width:80%;
+    width:63%;
     margin-top: 20px;
     margin-bottom: 20px;
 }

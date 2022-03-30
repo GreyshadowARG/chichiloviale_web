@@ -1,8 +1,6 @@
 .archivo__container{
     width: 90%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+    @extend %flex-column-center;
     margin: 0 auto;
     margin-top: 20px;
 }

@@ -1,0 +1,5 @@
+@mixin navbar_img ($width, $padding-left, $padding-right) {
+    width: $width;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+}
