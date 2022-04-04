@@ -1,5 +1,5 @@
 .navbar{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 0.08rem;
     background-color: map-get($header, bg-header);
     img{
@@ -7,7 +7,7 @@
     }
 }
 .navbar-brand{
-    font-weight: 500;
+    font-weight:400;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     color: black;
@@ -26,18 +26,15 @@
         font-weight: bold;
         color: rgb(29, 29, 29);
         &:hover{
-            color: rgb(109, 21, 10);
-            background-image: linear-gradient(rgb(230, 204, 83),rgb(233, 214, 131));
+            color: rgb(255, 255, 255);
             transition: 0.3s ease-in;
         }
         a.nav-link:hover{
-            color: rgb(109, 21, 10);
-            background-image: linear-gradient(rgb(230, 204, 83),rgb(233, 214, 131));
+            color: rgb(255, 255, 255);
             transition: 0.3s ease-in;
         }
         a.navbar-brand:hover{
-            color: rgb(109, 21, 10);
-            background-image: linear-gradient(rgb(230, 204, 83),rgb(233, 214, 131));
+            color: rgb(255, 255, 255);
             transition: 0.3s ease-in;
         }
     }

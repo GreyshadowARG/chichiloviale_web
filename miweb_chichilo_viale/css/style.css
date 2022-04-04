@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -23,7 +24,7 @@ body {
 }
 
 .navbar {
-  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 0.08rem;
   background-color: #e6cc53;
 }
@@ -34,7 +35,7 @@ body {
 }
 
 .navbar-brand {
-  font-weight: 500;
+  font-weight: 400;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   color: black;
@@ -56,18 +57,15 @@ body {
   color: #1d1d1d;
 }
 .navbar-modificada a.nav-link:hover, .navbar-modificada a.navbar-brand:hover {
-  color: #6d150a;
-  background-image: linear-gradient(#e6cc53, #e9d683);
+  color: white;
   transition: 0.3s ease-in;
 }
 .navbar-modificada a.nav-link a.nav-link:hover, .navbar-modificada a.navbar-brand a.nav-link:hover {
-  color: #6d150a;
-  background-image: linear-gradient(#e6cc53, #e9d683);
+  color: white;
   transition: 0.3s ease-in;
 }
 .navbar-modificada a.nav-link a.navbar-brand:hover, .navbar-modificada a.navbar-brand a.navbar-brand:hover {
-  color: #6d150a;
-  background-image: linear-gradient(#e6cc53, #e9d683);
+  color: white;
   transition: 0.3s ease-in;
 }
 
@@ -100,7 +98,7 @@ footer ul li {
 .archivo__container {
   width: 90%;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .archivo__programa {
@@ -119,14 +117,6 @@ footer ul li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.archivo_vid {
-  height: 170px;
-  width: 220px;
-  display: flex;
-  border: solid 1px black;
-  background-color: #7e5454;
 }
 
 .archivo__titulo {
